@@ -8,7 +8,7 @@ interface ITheme {
 }
 
 interface IThemeProvider {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 const ThemeContext = createContext<ITheme | null>(null);
@@ -74,7 +74,7 @@ export const Example = () => {
 
   return (
     <button
-      onClick={(e) => {
+      onClick={() => {
         toggleColorScheme();
       }}
     >
