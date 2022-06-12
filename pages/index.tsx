@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
+import { Example, ThemeProvider } from '../context/ThemeContext';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1 className="bg-slate-900	text-white">Homepage</h1>
-    </div>
+    <ThemeProvider>
+      <h1 className="bg-slate-100	text-white dark:bg-black">Homepage</h1>
+      <Example />
+    </ThemeProvider>
   );
 };
 

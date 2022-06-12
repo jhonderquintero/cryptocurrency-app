@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,4 +8,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class'
 }
