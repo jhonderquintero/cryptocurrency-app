@@ -7,6 +7,10 @@ interface ITheme {
   toggleColorScheme: () => void;
 }
 
+interface IThemeProvider {
+  children: JSX.Element;
+}
+
 const ThemeContext = createContext<ITheme | null>(null);
 
 function getPreferredScheme(
@@ -27,7 +31,7 @@ function getPreferredScheme(
   return defaultColorScheme;
 }
 
-export function ThemeProvider({ children }) {
+export function ThemeProvider({ children }: IThemeProvider) {
   const [colorScheme, setColorScheme] = useState<ColorScheme>(() =>
     getPreferredScheme()
   );
