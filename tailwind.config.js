@@ -1,12 +1,13 @@
 // eslint-disable-next-line no-undef
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        Nunito: ['Nunito', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-  darkMode: 'class'
-}
+  darkMode: 'class',
+};
