@@ -14,7 +14,7 @@ const info = 'font-Nunito text-xs color-slate-100 dark:text-white';
 
 const defaultText = 'font-Nunito text-base color-slate-100';
 
-const alternative = 'text-gray-300 dark:text-white';
+const alternative = 'text-gray-300 dark:text-gray-500';
 
 const bold = 'font-bold';
 
