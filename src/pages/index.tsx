@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className='h-screen bg-surface dark:bg-surface-dark m-0 '>
       <h1 className="text-black dark:text-white m-0">Title</h1>
-      <Button onClick={handleClick} variant="outlined">Click Here</Button>
+      <Button onClick={handleClick} variant="normal">Click Here</Button>
     </div>
   );
 };

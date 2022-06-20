@@ -6,19 +6,7 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
    */
   variant?: ButtonVariant;
   /**
-   * What background color to use
+   * What color to use
    */
-  backgroundColor?: string;
-  /**
-   * What background color to use in dark mode
-   */
-  darkBackgroundColor?: string;
-  /**
-   * What text color to use
-   */
-  textColor?: string;
-  /**
-   * What text color to use in dark mode
-   */
-  darkTextColor?: string;
+  color?: string;
 }
