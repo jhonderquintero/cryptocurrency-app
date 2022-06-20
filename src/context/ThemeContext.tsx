@@ -68,17 +68,3 @@ export function useThemeProvider(): ITheme {
   }
   return context;
 }
-
-export const Example = () => {
-  const { toggleColorScheme } = useThemeProvider();
-
-  return (
-    <button
-      onClick={() => {
-        toggleColorScheme();
-      }}
-    >
-      change color
-    </button>
-  );
-};
