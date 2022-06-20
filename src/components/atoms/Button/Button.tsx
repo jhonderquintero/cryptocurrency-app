@@ -1,48 +1,25 @@
 import React from 'react';
-import './button.css';
+import { ButtonProps, ButtonVariant } from './definitions';
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
-}
+export const Button = ({ variant = 'normal', ...rest }: ButtonProps) => {
+  const classes = `${getButtonClasses(variant)}`;
+  return <button {...rest} className={classes} />;
+};
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
-  );
+const getButtonClasses = (buttonVariant: ButtonVariant) => {
+  const buttonClases = {
+    normal: function () {
+      return `bg-primary dark:bg-primary-dark text-primary-dark dark:text-primary py-2 px-4`;
+    },
+    outlined: function () {
+      return `bg-transparent text-black dark:text-white py-2 px-4 border-2 border-black dark:border-white`;
+    },
+    text: function () {
+      return `bg-transparent text-black dark:text-white py-2 px-4 hover:bg-primary hover:text-white`;
+    },
+    custom: function () {
+      return '';
+    },
+  };
+  return (buttonClases[buttonVariant] || buttonClases['normal'])();
 };

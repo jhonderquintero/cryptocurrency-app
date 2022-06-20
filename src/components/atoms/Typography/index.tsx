@@ -1,45 +1,37 @@
 import React from 'react';
-import { types, styles } from './Typography.style';
-import { Props } from './types';
+import { TypographyProps, TypographyVariant } from './definitions';
+import { styles } from './styles.style';
 
-const index = ({ type, children, isBold = false, isAlt = false }: Props) => {
-  let styleClass: string;
-  switch (type) {
-    case types.headingLg:
-      styleClass = styles.headingLg;
-      break;
-    case types.heading:
-      styleClass = styles.heading;
-      break;
-    case types.headingSm:
-      styleClass = styles.headingSm;
-      break;
-    case types.textLg:
-      styleClass = styles.textLg;
-      break;
-    case types.text:
-      styleClass = styles.text;
-      break;
-    case types.textSm:
-      styleClass = styles.textSm;
-      break;
-    case types.info:
-      styleClass = styles.info;
-      break;
-    default:
-      styleClass = styles.defaultText;
-      break;
+const index = ({
+  variant = 'text',
+  isBold = false,
+  isAlt = false,
+  children,
+}: TypographyProps) => {
+  const classes = `${getTypographyClasses(variant, isBold, isAlt)}`;
+  if (variant.indexOf('heading') !== -1) {
+    return <h2 className={classes}>{children}</h2>;
   }
-  return (
-    <p
-      className={`${styleClass} ${isBold && styles.bold} ${
-        isAlt && styles.alternative
-      }`}
-    >
-      {children}
-    </p>
-  );
+  return <p className={classes}>{children}</p>;
 };
-export const textType = types;
+
+const getTypographyClasses = (
+  typographyVariant: TypographyVariant,
+  isBold: boolean,
+  isAlt: boolean
+) => {
+  const conditionStyle =
+    (isAlt ? styles.alternative : '') + (isBold ? styles.bold : '');
+  const typographyClasses = {
+    'heading-lg': () => styles.headingLg + conditionStyle,
+    heading: () => styles.heading + conditionStyle,
+    'heading-sm': () => styles.headingSm + conditionStyle,
+    'text-lg': () => styles.textLg + conditionStyle,
+    text: () => styles.text + conditionStyle,
+    'text-sm': () => styles.textSm + conditionStyle,
+    info: () => styles.info + conditionStyle,
+  };
+  return (typographyClasses[typographyVariant] || typographyClasses['text'])();
+};
 
 export default index;

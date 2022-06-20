@@ -14,9 +14,9 @@ const info = 'font-Nunito text-xs color-slate-100 dark:text-white';
 
 const defaultText = 'font-Nunito text-base color-slate-100';
 
-const alternative = 'text-gray-300 dark:text-gray-500';
+const alternative = ' text-gray-300 dark:text-gray-500';
 
-const bold = 'font-bold';
+const bold = ' font-bold';
 
 export const styles = {
   textLg,
@@ -29,15 +29,4 @@ export const styles = {
   defaultText,
   alternative,
   bold,
-};
-
-export const types = {
-  headingLg: 'headingLg',
-  heading: 'heading',
-  headingSm: 'headingSm',
-  textLg: 'textLg',
-  text: 'text',
-  textSm: 'textSm',
-  info: 'info',
-  default: 'default',
 };
