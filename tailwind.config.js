@@ -130,6 +130,12 @@ module.exports = {
         surface: theme.colors.surfaceDefault.light,
         'surface-dark': theme.colors.surfaceDefault.dark,
       },
+      backgroundImage: {
+        'background-1': "url('../../public/assets/images/background-1.png')",
+        'background-2': "url('../../public/assets/images/background-2.png')",
+        'background-3': "url('../../public/assets/images/background-3.png')",
+        'background-4': "url('../../public/assets/images/background-4.png')",
+      },
     },
   },
   plugins: [],

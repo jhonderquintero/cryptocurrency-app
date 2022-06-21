@@ -8,9 +8,13 @@ const Home: NextPage = () => {
     toggleColorScheme();
   }
   return (
-    <div className='h-screen bg-surface dark:bg-surface-dark m-0 '>
-      <h1 className="text-black dark:text-white m-0">Title</h1>
-      <Button onClick={handleClick} variant="normal">Click Here</Button>
+    <div className="h-screen w-full bg-background-1 dark:bg-surface-dark m-0">
+      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 max-w-8xl">
+        <h1 className="text-black dark:text-white m-0">Title</h1>
+        <Button onClick={handleClick} variant="outlined">
+          Click Here
+        </Button>
+      </div>
     </div>
   );
 };
