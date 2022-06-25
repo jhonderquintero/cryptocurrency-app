@@ -1,32 +1,22 @@
-const textLg = 'font-Nunito text-2xl color-slate-100 dark:text-white';
-
-const text = 'font-Nunito text-xl color-slate-100 dark:text-white';
-
-const textSm = 'font-Nunito text-base color-slate-100 dark:text-white';
-
-const headingLg = 'font-Nunito text-5xl color-slate-100 dark:text-white';
-
-const heading = 'font-Nunito text-4xl color-slate-100 dark:text-white';
-
-const headingSm = 'font-Nunito text-3xl color-slate-100 dark:text-white';
-
-const info = 'font-Nunito text-xs color-slate-100 dark:text-white';
-
-const defaultText = 'font-Nunito text-base color-slate-100';
-
-const alternative = ' text-gray-300 dark:text-gray-500';
-
+const typography = 'font-Nunito color-slate-100 dark:text-white';
+const alt = ' text-gray-300 dark:text-gray-500';
 const bold = ' font-bold';
+const headingLg = typography + ' text-5xl';
+const heading = typography + ' text-4xl';
+const headingSm = typography + ' text-3xl';
+const textLg = typography + ' text-2xl';
+const text = typography + ' text-xl';
+const textSm = typography + ' text-base';
+const info = typography + ' text-sm';
 
 export const styles = {
+  alt,
+  bold,
+  headingLg,
+  heading,
+  headingSm,
   textLg,
   text,
   textSm,
-  heading,
-  headingLg,
-  headingSm,
   info,
-  defaultText,
-  alternative,
-  bold,
 };
