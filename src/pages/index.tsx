@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { ThemeProvider } from '../context/ThemeContext';
-import Typography from '../components/atoms/Typography/Typography';
+import Typography from '../atomic/atoms/Typography/Typography';
 
 const Home: NextPage = () => {
   return (
