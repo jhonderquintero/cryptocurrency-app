@@ -1,4 +1,4 @@
-const typography = 'font-Nunito color-slate-100 dark:text-white';
+const typography = 'font-Nunito color-slate-100 dark:text-white m-0 p-0';
 const alt = ' text-gray-300 dark:text-gray-500';
 const bold = ' font-bold';
 const headingLg = typography + ' text-5xl';
