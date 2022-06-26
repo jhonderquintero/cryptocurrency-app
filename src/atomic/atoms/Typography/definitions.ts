@@ -19,5 +19,5 @@ export interface TypographyProps
   variant?: TypographyVariant;
   isAlt?: boolean;
   isBold?: boolean;
-  children: string;
+  children: React.ReactNode;
 }

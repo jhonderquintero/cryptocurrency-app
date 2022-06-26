@@ -23,7 +23,7 @@ const getButtonClasses = (buttonVariant: ButtonVariant) => {
       return `btn-normal bg-primary dark:bg-primary-dark text-primary-dark dark:text-primary py-2 px-4 hover:bg-primary/90`;
     },
     outlined: function () {
-      return `btn-outlined bg-transparent text-black dark:text-white py-2 px-4 border-2 border-black dark:border-white`;
+      return `btn-outlined bg-transparent text-black dark:text-white py-4 px-12 border-2 border-black dark:border-white text-xs`;
     },
     text: function () {
       return `btn-text bg-transparent text-black dark:text-white py-2 px-4 hover:bg-primary hover:text-white`;

@@ -137,6 +137,9 @@ module.exports = {
         'background-4': "url('../../public/assets/images/background-4.png')",
       },
     },
+    fontFamily: {
+      inter: ['inter'],
+    },
   },
   plugins: [],
   darkMode: 'class',
