@@ -1,9 +1,9 @@
 const primary = {
-  light: {
+  dark: {
     100: '#3A3C43',
     200: '#1D2024',
   },
-  dark: {
+  light: {
     100: '#FFFFFF',
     200: '#D8D8D8',
   },
