@@ -19,8 +19,7 @@ const Home: NextPage = () => {
 
       {/* Move this to a new Molecule  */}
       <div className="flex flex-row justify-start my-24">
-        <div className='mx-8 md:mx-16  w-8 bg-white'>
-        </div>
+        <div className="mx-8 md:mx-16  w-8 bg-white"></div>
         <div className="w-2/3 sm:w-2/4 lg:w-2/5">
           <Typography variant="heading-lg">
             Exchange between all popular currencies with a couple of clicks

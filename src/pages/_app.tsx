@@ -2,11 +2,14 @@ import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 import 'normalize.css';
 import { ThemeProvider } from '../context/ThemeContext';
+import { BaseLayout } from '../atomic/templates/BaseLayout';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
-      <Component {...pageProps} />
+      <BaseLayout>
+        <Component {...pageProps} />
+      </BaseLayout>
     </ThemeProvider>
   );
 }

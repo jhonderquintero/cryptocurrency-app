@@ -38,48 +38,6 @@ const surface = {
   },
 };
 
-// const green = {
-//   100: '#7AC231',
-//   200: '#65A028',
-//   300: '#498110',
-//   400: '#2E5B00',
-// };
-
-// const red = {
-//   100: '#CD021B',
-//   200: '#D0021B',
-//   300: '#A70014',
-//   400: '#81000F',
-// };
-
-// const orange = {
-//   100: '#F2921B',
-//   200: '#C36F07',
-//   300: '#9A5500',
-//   400: '#764100',
-// };
-
-// const blue = {
-//   100: '#2878D7',
-//   200: '#0C62C8',
-//   300: '#074794',
-//   400: '#053874',
-// };
-
-// const purple = {
-//   100: '#939ABE',
-//   200: '#494AA7',
-//   300: '#303099',
-//   400: '#1D1D79',
-// };
-
-// const grey = {
-//   100: '#B4B2B2',
-//   200: '#838383',
-//   300: '#525252',
-//   400: '#121212',
-// };
-
 const theme = {
   name: 'cryptocurrency-theme',
   colors: {
@@ -107,6 +65,10 @@ const theme = {
       light: surface.light[100],
       dark: surface.dark[100],
     },
+    secondarySurface: {
+      light: tertiary.light[200],
+      dark: tertiary.dark[200],
+    },
   },
 };
 
@@ -129,6 +91,8 @@ module.exports = {
         'tertiary-highlight-dark': theme.colors.tertiaryHighlight.dark,
         surface: theme.colors.surfaceDefault.light,
         'surface-dark': theme.colors.surfaceDefault.dark,
+        'secondary-surface': theme.colors.secondarySurface.light,
+        'secondary-surface-dark': theme.colors.secondarySurface.dark,
       },
       backgroundImage: {
         'background-1': "url('../../public/assets/images/background-1.png')",
