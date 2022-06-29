@@ -11,9 +11,9 @@ const Home: NextPage = () => {
   };
   return (
     <ThemeProvider>
-      <div className="bg-slate-100	dark:bg-black">
+      <div className="bg-surface	dark:bg-surface-dark">
         <Typography variant="heading-lg">TEXT</Typography>
-        <Input ref={inputRef} variant="email" />
+        <Input placeHolder="search..." ref={inputRef} variant="email" />
         <button onClick={logInputHandler}>log input</button>
       </div>
     </ThemeProvider>
