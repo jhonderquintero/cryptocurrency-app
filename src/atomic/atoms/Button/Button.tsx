@@ -20,13 +20,13 @@ export const Button = ({
 const getButtonClasses = (buttonVariant: ButtonVariant) => {
   const buttonClases = {
     normal: function () {
-      return `btn-normal bg-primary dark:bg-primary-dark text-primary-dark dark:text-primary py-2 px-4 hover:bg-primary/90`;
+      return `btn-normal rounded-sm bg-primary-subdued dark:bg-primary-dark text-primary-dark dark:text-primary py-2 px-4 hover:bg-tertiary`;
     },
     outlined: function () {
-      return `btn-outlined bg-transparent text-black dark:text-white py-2 px-4 border-2 border-black dark:border-white`;
+      return `btn-outlined rounded-sm bg-transparent text-black dark:text-white py-2 px-4 border-2 border-black dark:border-white`;
     },
     text: function () {
-      return `btn-text bg-transparent text-black dark:text-white py-2 px-4 hover:bg-primary hover:text-white`;
+      return `btn-text rounded-sm bg-transparent text-black dark:text-white py-2 px-4 hover:bg-primary hover:text-white`;
     },
     custom: function () {
       return 'btn-custom py-2 px-4';
