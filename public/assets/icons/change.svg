@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="76.5px" height="24.249023px" viewBox="0 0 76.5 24.249023" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M75.4393 3.18198L76.5 4.24264L75.4393 5.3033L72.2574 8.48528L71.1967 7.42462L73.6287 4.99264L0 4.99264L0 3.49264L73.6287 3.49264L71.1967 1.06066L72.2574 -1.85452e-07L75.4393 3.18198Z" id="path_1" />
+    <path d="M1.06066 18.9457L1.85452e-07 20.0063L1.06066 21.067L4.24264 24.249L5.3033 23.1883L2.87132 20.7563L76.5 20.7563L76.5 19.2563L2.87132 19.2563L5.3033 16.8243L4.24264 15.7637L1.06066 18.9457Z" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="clip_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="Group-66">
+    <g id="Combined-Shape">
+      <use stroke="none" fill="#AA9191" xlink:href="#path_1" fill-rule="evenodd" />
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#3A3C43" stroke-width="3" />
+      </g>
+    </g>
+    <g id="Combined-Shape">
+      <g clip-path="url(#clip_2)">
+        <use xlink:href="#path_2" fill="none" stroke="#3A3C43" stroke-width="3" />
+      </g>
+    </g>
+  </g>
+</svg>

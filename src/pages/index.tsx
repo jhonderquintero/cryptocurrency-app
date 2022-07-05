@@ -1,12 +1,14 @@
 import type { NextPage } from 'next';
 import { Button } from '../atomic/atoms/Button/Button';
 import Typography from '../atomic/atoms/Typography/Typography';
+import Card from '../atomic/molecules/Card/Card';
 
 const Home: NextPage = () => {
   return (
     <div className="h-screen w-full bg-background-1 bg-cover bg-no-repeat bg-black m-0">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-8xl py-8 flex flex-row	justify-start mb-16">
         <Typography variant="heading-sm">cryptonix</Typography>
+        <Card variant="info">This is a card info form</Card>
       </div>
 
       <div className="flex flex-column justify-start">
